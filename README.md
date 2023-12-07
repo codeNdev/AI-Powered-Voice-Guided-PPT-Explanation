@@ -35,4 +35,4 @@ Explore the functionality of the AI Teacher for PowerPoint WebApp through our [L
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/username/repository.git
+   gh repo clone codeNdev/AI-Powered-Voice-Guided-PPT-Explanation
