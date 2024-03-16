@@ -2,6 +2,7 @@
 
 ![Project Logo/Icon](link_to_logo_or_icon.png)
 
+## Will Upload the complete code once Paper get published
 ## Introduction
 
 The AI Teacher for PowerPoint is a cutting-edge educational tool designed to enhance the learning experience by leveraging artificial intelligence. This application allows users to upload PowerPoint presentations (PPT) and receive comprehensive explanations for each slide, both in audio and text formats, delivered by an AI-based teacher.
