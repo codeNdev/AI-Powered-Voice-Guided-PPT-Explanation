@@ -1,0 +1,83 @@
+/* ButtonStyles.css */
+.hero {
+
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around; // flex-direction: column;
+
+    .heroDiv {
+        min-width: 20rem;
+    }
+
+    .heroImage {
+        /* Your image styles */
+        width: fit-content;
+        /* Ensures the image doesn't exceed its container */
+    }
+
+    .textPrimary{
+        color: #6b60f1;
+    }
+
+}
+
+
+.A {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+
+
+    @media (min-width: 768px) and   (max-width: 1024px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .section {
+        margin: 20px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0px 10%;
+    }
+
+    .button1 {
+        background: #6b60f1;
+        padding: 8px 15px 8px 15px;
+        border: none;
+        color: #fff;
+    }
+
+    .button1:hover {
+        background: #0a102d;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    .button2 {
+        background: #4B99AD;
+        padding: 8px 15px 8px 15px;
+        border: none;
+        color: #fff;
+
+    }
+
+    .button2:hover {
+        background: #4691A4;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}

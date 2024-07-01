@@ -1,0 +1,37 @@
+# Ignore virtual environment
+env/
+
+# Ignore environment variables file
+.env
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore database files
+*.db
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+*.pyc
+
+# Ignore local development settings
+instance/
+
+# Ignore files generated during testing
+.coverage
+htmlcov/
+
+#ignore models
+wav2lip_gan.pth
+s3fd-619a316812.pth
+s3fd.pth
+
+
+# ignore ppptx files
+static/

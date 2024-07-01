@@ -1,0 +1,46 @@
+import { useState } from 'react'
+import { BrowserRouter as Router,Route, Routes, Navigate } from "react-router-dom";
+import Presentation from './pages/presentation/presentation';
+import Home from './pages/home/home'
+import Upload from './pages/upload/Upload';
+import Generate from './pages/generate/Generate';
+import PptxViewer from './pages/PptxViewer/PresentationViewer';
+import './App.css'
+import Login from './pages/login/Login';
+import useToken from './auth/useToken';
+import Navbar from './components/Navbar/Navbar';
+import Signup from './pages/signup/Signup';
+
+function App() {
+  const { token, removeToken, setToken } = useToken();
+  
+  console.log('App mein token')
+  console.log(token)
+
+
+  return (
+    <Router>
+      {!token && token!=="" &&token!== undefined?  
+      <Routes>
+        <Route path="/login" element={<Login setToken={setToken} />} />
+        <Route path="/signup" element={
+          <Signup token={token} removeToken={removeToken} setToken={setToken} />} 
+        />
+         <Route path="*" element={<Navigate to="/login" />} />
+      </Routes>
+      :(
+        <>
+          <Routes>
+            <Route path="/" element={<Home token={token} removeToken={removeToken} setToken={setToken} />} />
+            <Route path="/presentation" element={<Presentation token={token} setToken={setToken} />} />
+            <Route path="/upload" element={<Upload token={token} setToken={setToken} />} />
+            <Route path="/generate" element={<Generate token={token} setToken={setToken} />} />
+            <Route path="/hello" element={<PptxViewer token={token} setToken={setToken}/>} />
+          </Routes>
+        </>
+      )}
+    </Router>
+  )
+}
+
+export default App

@@ -1,0 +1,12 @@
+
+.clickable {
+  cursor: pointer;
+}
+
+.pdf-reader{
+  padding: 0px 20px;
+}
+
+body{
+  background-color: #242424;
+}
